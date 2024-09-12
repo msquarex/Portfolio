@@ -1,0 +1,19 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: purple; }
+  }
