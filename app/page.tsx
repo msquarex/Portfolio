@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image'
-import { Github, Twitter, Linkedin, Youtube, Code, Briefcase, GraduationCap, Award } from 'lucide-react'
+import { Github, Linkedin, Code, Briefcase, GraduationCap, Award } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import Background3D from './components/Background3D'
 import CursorGlow from './components/CursorGlow'
@@ -86,7 +86,7 @@ export default function Home() {
     return () => window.removeEventListener('resize', updateDotPositions);
   }, []);
 
-  const isInView = useInView(projectsRef, { once: true, amount: 0.2 });
+  
 
   const scrollToSection = (elementRef: React.RefObject<HTMLElement>) => {
     elementRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -140,9 +140,9 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              <h2 className="text-3xl font-bold mb-4">Hello, I'm Madhav</h2>
+              <h2 className="text-3xl font-bold mb-4">Hello, I&apos;m Madhav</h2>
               <p className="text-xl text-gray-300 max-w-3xl">
-                I'm a passionate software developer with a keen interest in creating innovative solutions. 
+                I&apos;m a passionate software developer with a keen interest in creating innovative solutions. 
                 With expertise in full-stack development and a growing fascination with AI, 
                 I strive to build applications that make a difference. 
                 Welcome to my portfolio, where you can explore my projects and journey in tech.
@@ -209,7 +209,7 @@ export default function Home() {
           >
             <h2 className="text-4xl font-bold mb-4">Personal Projects</h2>
             <p className="text-gray-400 mb-8 max-w-4xl">
-              Below you'll find a selection of my best work that reflects my skills and experience in
+              Below you&apos;ll find a selection of my best work that reflects my skills and experience in
               Software Engineering. Each project was completed with great attention to detail and using
               modern technologies.
             </p>
