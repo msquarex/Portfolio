@@ -53,13 +53,7 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 }
 };
 
-const barVariants = {
-  hidden: { width: 0 },
-  visible: (proficiency: number) => ({
-    width: `${proficiency}%`,
-    transition: { duration: 0.8, ease: "easeOut" }
-  })
-};
+
 
 export default function SkillsSection() {
   const [ref, inView] = useInView({
