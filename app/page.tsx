@@ -10,6 +10,8 @@ import { useRef, useCallback } from 'react';
 import Footer from './components/Footer'
 import LoadingScreen from './components/LoadingScreen'
 import ContactForm from './components/ContactForm'
+import CursorGlow from './components/CursorGlow'
+
 
 
 const EducationTimeline = dynamic(() => import('./components/EducationTimeline'))
@@ -117,6 +119,7 @@ export default function Home() {
         ) : (
           <>
             <Background3D />
+            <CursorGlow />
             <div className="relative z-10">
               <div className="flex justify-between items-center p-4">
                 <div className="flex space-x-4">
