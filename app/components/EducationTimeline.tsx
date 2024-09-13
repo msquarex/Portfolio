@@ -5,22 +5,22 @@ import { useInView } from 'framer-motion';
 
 const educationData = [
   {
-    institution: "Lynbrook High School",
-    degree: "High School Diploma",
-    dates: "2016-2020",
-    logo: "/lynbrook-logo.png"
+    institution: "Manav Rachna International School, Charmwood, Faridabad",
+    degree: "CBSE 10th Boards",
+    dates: "2014-2021",
+    logo: "/assets/mrislogo.png"
   },
   {
-    institution: "University of California, Santa Cruz",
-    degree: "Bachelor of Science in Computer Science",
-    dates: "2020-2023",
-    logo: "/ucsc-logo.png"
+    institution: "MM Public School, Pitampura, New Delhi",
+    degree: "CBSE 12th Boards in PCM",
+    dates: "2021-2023",
+    logo: "/assets/mmlogo.png"
   },
   {
-    institution: "University of Southern California",
-    degree: "Master of Science in Computer Science - Artificial Intelligence",
-    dates: "2023-2025",
-    logo: "/usc-logo.png"
+    institution: "VIT University, Chennai",
+    degree: "Bachelor of Technology in Computer Science",
+    dates: "2023-2027",
+    logo: "/assets/vitlogo.png"
   }
 ]
 

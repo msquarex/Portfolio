@@ -3,15 +3,18 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 import * as THREE from 'three';
+import { useScroll } from 'framer-motion';
 
 function Stars() {
   const ref = useRef<THREE.Points>(null!)
   const sphere = random.inSphere(new Float32Array(3000), { radius: 1.5 })
+  const { scrollYProgress } = useScroll();
 
   useFrame((state, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 10
       ref.current.rotation.y -= delta / 15
+      ref.current.position.y = scrollYProgress.get() * -0.5
     }
   })
 
