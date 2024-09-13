@@ -401,7 +401,7 @@ const projects = [
     technologies: "React / NextJs / TailwindCSS / TypeScript",
     description: "This portfolio is a website that showcases my projects and skills. It is a static website that is built using NextJs and TailwindCSS. It is a simple website that uses a lot of animations and 3D graphics to create a unique user experience.",
     images: ["/assets/portfoliomain.png", "/assets/portfolioprojects.png", "/assets/portfolioeducation.png"],
-    demoLink: "madhavmittal.vercel.app",
+    demoLink: "#",
     githubLink: "https://github.com/msquarex/Portfolio"
   },
   // ... add more projects as needed
