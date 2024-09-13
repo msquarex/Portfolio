@@ -41,7 +41,7 @@ export default function EducationTimeline() {
   return (
     <motion.section 
       ref={ref}
-      className="relative mt-12 pl-8"
+      className="relative mt-12 px-4 sm:px-8 max-w-full overflow-x-hidden" // Padding on both sides
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={{
@@ -52,18 +52,18 @@ export default function EducationTimeline() {
         },
       }}
     >
-      <h2 className="text-4xl font-bold mb-4">Education</h2>
-      <p className="text-xl mb-8 text-gray-300">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-4 px-4">Education</h2>
+      <p className="text-lg sm:text-xl mb-8 text-gray-300 px-4">
         Masters of Science in Computer Science<br />
         Full Stack Web Development, Applied Machine Learning
       </p>
 
       <div className="relative">
         <motion.div 
-          className="absolute top-9 left-0 right-0 h-px bg-accent-purple"
+          className="absolute top-9 left-0 right-0 h-px bg-accent-purple hidden sm:block"
           variants={lineVariants}
         ></motion.div>
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row sm:justify-between space-y-8 sm:space-y-0 px-4 sm:px-0">
           {educationData.map((edu, index) => (
             <motion.div 
               key={index} 
@@ -74,7 +74,7 @@ export default function EducationTimeline() {
               <div className="mb-2 text-sm font-semibold text-accent-purpleLight">{edu.dates}</div>
               <div className="w-4 h-4 bg-accent-purple rounded-full mb-4 z-10"></div>
               <motion.div 
-                className="bg-background-end p-6 rounded-lg w-72 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="bg-background-end p-6 rounded-lg w-full sm:w-72 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 whileHover={{ y: -5 }}
               >
                 <Image

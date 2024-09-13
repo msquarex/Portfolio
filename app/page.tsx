@@ -140,7 +140,7 @@ export default function Home() {
                 </nav>
               </div>
 
-              <div className="max-w-7xl w-full pt-16 pl-40 relative z-10">
+              <div className="max-w-7xl w-full pt-16 px-4 sm:px-8 sm:pl-40 relative z-10">
                 <div className="relative">
                   <motion.header className="mb-12" initial="initial" animate="animate">
                     <motion.div {...fadeInUp}>
@@ -174,27 +174,27 @@ export default function Home() {
                   </motion.section>
 
                   <motion.div
-                    className="absolute top-0 right-0 w-64 bg-background-end rounded-lg p-4 shadow-lg"
+                    className="absolute top-0 right-0 w-48 sm:w-64 bg-background-end rounded-lg p-3 sm:p-4 shadow-lg"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.8, duration: 0.6 }}
                   >
-                    <h3 className="text-xl font-bold mb-3">Highlights</h3>
-                    <div className="space-y-3">
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Highlights</h3>
+                    <div className="space-y-2 sm:space-y-3">
                       <HighlightItem
-                        icon={<Code className="w-4 h-4" />}
+                        icon={<Code className="w-3 h-3 sm:w-4 sm:h-4" />}
                         title="Many Projects"
                       />
                       <HighlightItem
-                        icon={<Briefcase className="w-4 h-4" />}
+                        icon={<Briefcase className="w-3 h-3 sm:w-4 sm:h-4" />}
                         title="Coding Experience"
                       />
                       <HighlightItem
-                        icon={<GraduationCap className="w-4 h-4" />}
+                        icon={<GraduationCap className="w-3 h-3 sm:w-4 sm:h-4" />}
                         title="B.tech Computer Science"
                       />
                       <HighlightItem
-                        icon={<Award className="w-4 h-4" />}
+                        icon={<Award className="w-3 h-3 sm:w-4 sm:h-4" />}
                         title="Frequent Hackathon Participant"
                       />
                     </div>
@@ -202,7 +202,7 @@ export default function Home() {
                 </div>
 
                 {/* Purple line with dots */}
-                <div ref={lineRef} className="absolute left-20 top-[calc(90vh-8rem)] bottom-0 w-0.5 bg-accent-purple">
+                <div ref={lineRef} className="absolute left-20 top-[calc(90vh-8rem)] bottom-0 w-0.5 bg-accent-purple hidden sm:block">
                   <div className="absolute w-4 h-4 bg-accent-purple rounded-full -left-[7px] top-0"></div>
                   {/* Rotated text for scrolling */}
                   <div className="absolute -left-16 top-4 transform -rotate-90 origin-top-right">
@@ -412,6 +412,6 @@ const HighlightItem = ({ icon, title }: { icon: React.ReactNode, title: string }
     <div className="bg-accent-purple p-1 rounded-full mr-2">
       {icon}
     </div>
-    <p className="text-sm">{title}</p>
+    <p className="text-xs sm:text-sm">{title}</p>
   </div>
 );

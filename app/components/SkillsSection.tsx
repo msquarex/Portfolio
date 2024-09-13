@@ -53,8 +53,6 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 }
 };
 
-
-
 export default function SkillsSection() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -62,7 +60,7 @@ export default function SkillsSection() {
   });
 
   return (
-    <section ref={ref} className="relative mt-12 px-4 sm:px-8">
+    <section ref={ref} className="relative mt-12 px-6 sm:px-12 md:px-16 lg:px-24">
       <h2 className="text-4xl font-bold mb-8">Skills</h2>
       <p className="mb-8">Throughout my career, I have gained significant experience and skills in various areas of this field.</p>
 
